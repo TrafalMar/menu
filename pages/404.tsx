@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <main className="container">
@@ -87,7 +89,9 @@ export default function NotFound() {
           You got lost in the <strong>404</strong> galaxy.
         </p>
         <p>
-          <button>Go back to earth.</button>
+          <button>
+            <Link href="/">Go back to earth.</Link>
+          </button>
         </p>
       </article>
     </main>
