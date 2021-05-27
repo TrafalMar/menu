@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { colors } from "../constants/colors";
+import { colors } from "../../../constants/colors";
 
-export const Navbar = styled.div`
+export const Navbar = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,6 +18,9 @@ export const Navbar = styled.div`
     justify-content: center;
     align-items: center;
     padding-bottom: 1rem;
+    & a:hover {
+      border-radius: 0.5rem;
+    }
   }
 `;
 
@@ -56,8 +59,7 @@ export const LinksContainer = styled.div`
     padding: 0 1.5rem;
   }
   & a:hover {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.1);
     outline: none;
   }
@@ -70,9 +72,5 @@ export const LinksContainer = styled.div`
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     place-items: center;
-    & a:hover {
-      border-bottom-left-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
-    }
   }
 `;
