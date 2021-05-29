@@ -1,16 +1,10 @@
-import { NavbarItemStyled } from "./styles";
+import { LinksContainer } from "./styles";
 
 interface Props {
-  text: string;
-  href: string;
+  children: any;
 }
 
-export const NavbarItem = ({ text, href }: Props) => {
-  return (
-    <NavbarItemStyled>
-      <a href={href} target="_blank">
-        <p>{text}</p>
-      </a>
-    </NavbarItemStyled>
-  );
+const NavbarItem = ({ children }: Props) => {
+  return <LinksContainer>{children}</LinksContainer>;
 };
+export default NavbarItem;

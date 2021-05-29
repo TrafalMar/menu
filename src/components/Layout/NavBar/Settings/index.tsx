@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
-import { Settings } from "./styles";
+import NavbarButton from "../NavbarItem/NavbarButton";
 import { FaCogs } from "react-icons/fa";
 import Modal from "./Modal";
 
@@ -21,9 +21,9 @@ export default function index() {
 
   return (
     <Fragment>
-      <Settings onClick={openSettings}>
-        <FaCogs size={"3rem"} />
-      </Settings>
+      <NavbarButton onClick={openSettings}>
+        <FaCogs size={"3.5rem"} />
+      </NavbarButton>
       {root !== null &&
         ReactDOM.createPortal(
           <Modal onClose={closeSettings} isModalVisible={showSettings} />,
