@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import NavbarButton from "../NavbarItem/NavbarButton";
 import { FaCogs } from "react-icons/fa";
