@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
-export const NavbarItemStyled = styled.div`
+export const LinksContainer = styled.div`
   display: flex;
-  font-size: 1.5rem;
-  color: white;
-  & a {
-    display: grid;
-    place-content: center;
-    max-width: 15rem;
+  & div {
+    height: 6.4rem;
   }
-  & a p {
-    height: fit-content;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+  grid-gap: 2rem;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    place-items: center;
   }
 `;

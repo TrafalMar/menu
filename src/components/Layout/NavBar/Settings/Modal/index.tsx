@@ -14,8 +14,8 @@ export default function index({ isModalVisible, onClose }: Props) {
     <Fragment>
       <Backdrop onClick={onClose} />
       <Modal>
-        <ModalHeader color={colors.pink}>
-          <Text size={"2.5rem"} bold={"bold"} color={colors.white}>
+        <ModalHeader color={colors.main}>
+          <Text size={"2.5rem"} bold={"bold"} color={colors.lightText}>
             Settings
           </Text>
         </ModalHeader>
