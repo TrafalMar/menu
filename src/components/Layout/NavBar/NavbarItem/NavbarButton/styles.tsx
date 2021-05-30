@@ -7,7 +7,8 @@ export const StyledNavbarButton = styled.button`
   height: 6.4rem;
 
   font-size: 1.5rem;
-  color: white;
+  color: ${(props) =>
+    props.theme.navBarButton ? props.theme.navBarButton : "white"};
   border: none;
   background-color: transparent;
   transition: padding 0.3s;
@@ -17,5 +18,11 @@ export const StyledNavbarButton = styled.button`
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 0 2.5rem 0 4.5rem;
+  }
+  @media (max-width: 900px) {
+    padding: 0 1.5rem 0 2.5rem;
+    &:hover {
+      padding: 0 4.5rem 0 2.5rem;
+    }
   }
 `;

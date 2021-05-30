@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../../constants/colors";
 
 export const StyledGlossyBlock = styled.div`
   position: relative;
@@ -16,12 +15,17 @@ export const StyledGlossyBlock = styled.div`
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    color: ${colors.lightText};
+    color: ${(props) =>
+      props.theme.linkColor ? props.theme.linkColor : "#fff"};
   }
 
   :hover {
     transform: translateY(-0.5rem);
-    background: ${colors.main};
+    background: ${(props) => (props.theme.main ? props.theme.main : "#fff")};
     transition: transform 0.05s;
+  }
+  :hover a {
+    color: ${(props) =>
+      props.theme.linkHighlight ? props.theme.linkHighlight : "#fff"};
   }
 `;

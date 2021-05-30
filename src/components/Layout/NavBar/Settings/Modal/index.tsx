@@ -1,7 +1,8 @@
-import { Fragment } from "react";
-import { colors } from "../../../../../constants/colors";
+import { Fragment, useContext } from "react";
+import { themePreviewColors } from "../../../../../constants/colors";
 
-import Text from "../../../../UI/Text";
+import ColorPicker from "../../../../UI/ColorPicker";
+import { ThemeContext } from "../../../../Layout/Layout";
 import { Modal, Backdrop, ModalHeader, ModalBody } from "./styles";
 
 interface Props {
@@ -10,20 +11,46 @@ interface Props {
 }
 
 export default function index({ isModalVisible, onClose }: Props) {
+  const { changeTheme } = useContext(ThemeContext);
+
   return isModalVisible ? (
     <Fragment>
       <Backdrop onClick={onClose} />
       <Modal>
-        <ModalHeader color={colors.main}>
-          <Text size={"2.5rem"} bold={"bold"} color={colors.lightText}>
-            Settings
-          </Text>
+        <ModalHeader>
+          <p>Theme</p>
         </ModalHeader>
         <ModalBody>
-          <Text lineHeight={1.6}>
-            Here will be placed general account settings for visual
-            representation.
-          </Text>
+          <ColorPicker
+            name="Standard"
+            marginTop="2rem"
+            marginBottom="2rem"
+            color={themePreviewColors.standard}
+            themeBorder={themePreviewColors.standardBorder}
+            onClick={() => {
+              changeTheme("default");
+            }}
+          />
+          <ColorPicker
+            name="Dark"
+            marginTop="2rem"
+            marginBottom="2rem"
+            color={themePreviewColors.dark}
+            themeBorder={themePreviewColors.darkBorder}
+            onClick={() => {
+              changeTheme("dark");
+            }}
+          />
+          <ColorPicker
+            name="Night"
+            marginTop="2rem"
+            marginBottom="2rem"
+            color={themePreviewColors.night}
+            themeBorder={themePreviewColors.nightBorder}
+            onClick={() => {
+              changeTheme("night");
+            }}
+          />
         </ModalBody>
       </Modal>
     </Fragment>

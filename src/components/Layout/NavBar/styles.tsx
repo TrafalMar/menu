@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../../../constants/colors";
 
 export const NavbarLogo = styled.nav`
   position: fixed;
@@ -14,7 +13,8 @@ export const NavbarLogo = styled.nav`
   border-top-right-radius: 50rem;
   border-bottom-right-radius: 50rem;
 
-  background-color: ${colors.main};
+  background-color: ${(props) =>
+    props.theme.main ? props.theme.main : "#fff"};
   box-shadow: 0 0.2rem 0.2rem 0 rgb(0 0 0 / 14%),
     0 0.3rem 0.1rem -0.2rem rgb(0 0 0 / 12%), 0 0.1rem 0.5rem 0 rgb(0 0 0 / 20%);
 `;
@@ -33,7 +33,8 @@ export const NavbarControls = styled.div`
   border-top-right-radius: 50rem;
   border-bottom-right-radius: 50rem;
 
-  background-color: ${colors.main};
+  background-color: ${(props) =>
+    props.theme.main ? props.theme.main : "#fff"};
   box-shadow: 0 0.2rem 0.2rem 0 rgb(0 0 0 / 14%),
     0 0.3rem 0.1rem -0.2rem rgb(0 0 0 / 12%), 0 0.1rem 0.5rem 0 rgb(0 0 0 / 20%);
 
