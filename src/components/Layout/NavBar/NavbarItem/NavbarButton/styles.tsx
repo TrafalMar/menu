@@ -22,7 +22,7 @@ export const StyledNavbarButton = styled.button`
   @media (max-width: 900px) {
     padding: 0 1.5rem 0 2.5rem;
     &:hover {
-      padding: 0 4.4rem 0 2.5rem;
+      padding: 0 4.5rem 0 2.5rem;
     }
   }
 `;
