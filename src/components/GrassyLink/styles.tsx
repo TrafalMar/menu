@@ -11,6 +11,14 @@ export const StyledGlossyBlock = styled.div`
 
   transition: transform 0.3s;
 
+  margin-bottom: 2rem;
+  :not(:first-child) {
+    margin-left: 1rem;
+  }
+  :not(:last-child) {
+    margin-right: 1rem;
+  }
+
   & a {
     padding: 2rem;
     font-size: 2rem;
