@@ -17,12 +17,12 @@ export const StyledNavbarButton = styled.button`
     cursor: pointer;
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0 2.5rem 0 4.5rem;
+    padding: 0 2.5rem 0 2.5rem;
   }
   @media (max-width: 900px) {
     padding: 0 1.5rem 0 2.5rem;
     &:hover {
-      padding: 0 4.5rem 0 2.5rem;
+      padding: 0 2.5rem 0 2.5rem;
     }
   }
 `;

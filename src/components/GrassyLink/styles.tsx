@@ -6,6 +6,7 @@ export const StyledGlossyBlock = styled.div`
   box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
 
   width: max-content;
+  height: min-content;
   border-radius: 1000rem;
 
   transition: transform 0.3s;
