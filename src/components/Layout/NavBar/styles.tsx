@@ -17,6 +17,8 @@ export const NavbarLogo = styled.nav`
     props.theme.main ? props.theme.main : "#fff"};
   box-shadow: 0 0.2rem 0.2rem 0 rgb(0 0 0 / 14%),
     0 0.3rem 0.1rem -0.2rem rgb(0 0 0 / 12%), 0 0.1rem 0.5rem 0 rgb(0 0 0 / 20%);
+
+  z-index: 10;
 `;
 
 export const NavbarControls = styled.div`
@@ -26,6 +28,7 @@ export const NavbarControls = styled.div`
   top: 10rem;
   width: min-content;
   overflow: hidden;
+  z-index: 10;
 
   height: auto;
   margin-top: 2rem;

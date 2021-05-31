@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import NavbarButton from "../NavbarItem/NavbarButton";
-import { FaCogs } from "react-icons/fa";
+import { FaPaintBrush } from "react-icons/fa";
 import Modal from "./Modal";
 
 export default function index() {
@@ -22,7 +22,7 @@ export default function index() {
   return (
     <Fragment>
       <NavbarButton onClick={openSettings}>
-        <FaCogs size={"3.5rem"} />
+        <FaPaintBrush size={"2.5rem"} />
       </NavbarButton>
       {root !== null &&
         ReactDOM.createPortal(
