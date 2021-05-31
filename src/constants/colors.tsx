@@ -17,6 +17,9 @@ export const defaultTheme = {
   modalHeader: "#fff",
   navBarButton: "#fff",
   colorPickerTextHighlight: "#ee6e73",
+  linkControlsBg: "#ee6e73",
+  linkControlsText: "#fff",
+  linkControlsTextHighlight: "#fa9598",
 
   linkColor: "#ee6e73",
   linkHighlight: "#fff",
@@ -31,6 +34,9 @@ export const darkTheme = {
   modalHeader: "#fff",
   navBarButton: "#fff",
   colorPickerTextHighlight: "#2d333b",
+  linkControlsBg: "#2d333b",
+  linkControlsText: "#fff",
+  linkControlsTextHighlight: "#3c4249",
 
   linkColor: "#2d333b",
   linkHighlight: "#fff",
@@ -43,10 +49,13 @@ export const nightTheme = {
   bgColor: "#2d333b",
   modalHeader: "#fff",
   navBarButton: "#fff",
+  linkControlsBg: "#24242b",
+  linkControlsText: "#e7e7e7",
+  linkControlsTextHighlight: "#2a2d31",
 
   colorPickerText: "gray",
   colorPickerTextHighlight: "#fff",
 
-  linkColor: "#a8a8a8",
+  linkColor: "#e7e7e7",
   linkHighlight: "#fff",
 };
