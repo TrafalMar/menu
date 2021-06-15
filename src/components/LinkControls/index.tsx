@@ -18,7 +18,7 @@ const LinkControls = () => {
   const renderControls = () => {
     if (!isOpened) return;
     return (
-      <ControlsContainer>
+      <ControlsContainer role="controls">
         <LinkControlItem>
           <FaPlus size="3rem" />
         </LinkControlItem>
