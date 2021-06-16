@@ -1,7 +1,7 @@
 {
   "name": "megamenu",
   "jest": {
-    "verbose": true
+    "setupFilesAfterEnv": ["<rootDir>test/setupTests.js"]
   },
   "version": "0.1.0",
   "private": true,
@@ -16,14 +16,9 @@
     "styled-components": "^5"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.14.4",
-    "@babel/preset-react": "^7.13.13",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@types/jest": "^26.0.23",
-    "babel-jest": "^27.0.1",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
     "babel-preset-next": "^1.4.0",
-    "jest": "^27.0.4",
     "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -33,12 +28,22 @@
     "ts-jest": "^27.0.3"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.8",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.23",
     "@types/react": "17.0.7",
     "@types/react-dom": "^17.0.5",
+    "@types/sinon": "^10.0.2",
     "@types/styled-components": "^5.1.9",
     "autoprefixer": "^10.2.6",
     "babel-plugin-styled-components": "^1.12.0",
     "cross-env": "^7.0.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest": "^27.0.4",
+    "jsdom": "16.6.0",
+    "jsdom-global": "3.0.2",
+    "sinon": "^11.1.1",
     "typescript": "4.2.4"
   }
 }

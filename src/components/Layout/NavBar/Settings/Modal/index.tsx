@@ -17,7 +17,7 @@ export default function index({ isModalVisible, onClose }: Props) {
     <Fragment>
       <Backdrop onClick={onClose} />
       <Modal>
-        <ModalHeader>
+        <ModalHeader id="modal-header">
           <p>Theme</p>
         </ModalHeader>
         <ModalBody>
